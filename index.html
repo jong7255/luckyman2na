@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>이정훈 | 동래구의원 후보 (온천2·3동)</title>
+  <meta property="og:title" content="기호 2-나번 이정훈 | 동래구의원 후보 (온천2·3동)"/>
+  <meta property="og:description" content="럭키가 키운 청년, 든든한 동래사람 — 정직하게! 유능하게! 럭키맨!"/>
+  <meta property="og:image" content="https://lucky2-alpha.vercel.app/thumbnail.jpg?v=2"/>
+  <meta property="og:url" content="https://lucky2-alpha.vercel.app"/>
+  <meta property="og:type" content="website"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://lucky2-alpha.vercel.app/thumbnail.jpg?v=2"/>
+  <link rel="icon" href="thumbnail.jpg" type="image/jpeg"/>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif;background:#fff;color:#222;}
+    nav{position:fixed;top:0;width:100%;background:#fff;border-bottom:3px solid #E61E2B;z-index:999;
+        display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:62px;}
+    .nav-logo{font-size:.95rem;font-weight:800;color:#E61E2B;}
+    .nav-links{display:flex;gap:28px;}
+    .nav-links a{text-decoration:none;color:#333;font-size:.87rem;font-weight:700;transition:color .2s;}
+    .nav-links a:hover{color:#E61E2B;}
+    #hero{min-height:100vh;display:flex;align-items:stretch;padding-top:62px;background:#fff;}
+    .hero-inner{display:flex;width:100%;max-width:1400px;margin:0 auto;}
+    .h-photo{flex:0 0 46%;position:relative;overflow:hidden;background:#E61E2B;}
+    .h-photo .cand-img{position:absolute;top:0;left:0;width:100%;height:100%;
+      object-fit:contain;object-position:center;z-index:1;display:block;}
+    .h-photo .no-img{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;
+        align-items:center;justify-content:center;color:#fff;font-size:.9rem;gap:10px;}
+    .h-photo .no-img span{font-size:5rem;}
+    .h-photo::after{content:'';position:absolute;top:0;right:-1px;width:80px;height:100%;
+        background:#fff;clip-path:polygon(100% 0,100% 100%,0 100%);z-index:2;}
+    .h-text{flex:1;display:flex;flex-direction:column;justify-content:center;
+        padding:64px 60px 64px 52px;background:#fff;}
+    .h-badge{display:inline-flex;align-items:center;gap:6px;background:#E61E2B;color:#fff;
+        font-size:.74rem;font-weight:800;padding:5px 14px;border-radius:20px;
+        margin-bottom:22px;letter-spacing:.04em;width:fit-content;}
+    .h-pos{font-size:.98rem;color:#666;margin-bottom:24px;}
+    .h-btns{display:flex;gap:12px;flex-wrap:wrap;}
+    .btn-r{display:inline-block;background:#E61E2B;color:#fff;padding:14px 32px;
+        border-radius:8px;text-decoration:none;font-weight:700;font-size:.95rem;transition:background .2s;}
+    .btn-r:hover{background:#b5151f;}
+    .btn-o{display:inline-block;border:2px solid #E61E2B;color:#E61E2B;padding:12px 28px;
+        border-radius:8px;text-decoration:none;font-weight:700;font-size:.95rem;transition:all .2s;}
+    .btn-o:hover{background:#E61E2B;color:#fff;}
+    .mqw{background:#E61E2B;padding:13px 0;overflow:hidden;white-space:nowrap;}
+    .mqi{display:inline-block;animation:mq 24s linear infinite;}
+    @keyframes mq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    .mqi span{color:#fff;font-size:.88rem;font-weight:800;margin:0 26px;letter-spacing:.04em;}
+    .mqi span::before{content:"✦ ";opacity:.7;}
+    section{padding:80px 0;}
+    .container{max-width:1100px;margin:0 auto;padding:0 40px;}
+    .sec-t{font-size:1.65rem;font-weight:900;color:#111;text-align:center;margin-bottom:10px;}
+    .sec-t em{color:#E61E2B;font-style:normal;}
+    .bar{width:48px;height:4px;background:#E61E2B;margin:10px auto 16px;border-radius:2px;}
+    .sec-s{text-align:center;color:#666;margin-bottom:48px;font-size:.93rem;}
+    #about{background:#fff;}
+    .about-wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:16px;overflow:hidden;
+        box-shadow:0 8px 40px rgba(0,0,0,.1);}
+    .about-img{position:relative;overflow:hidden;min-height:420px;}
+    .about-img img{width:100%;height:100%;object-fit:cover;display:block;}
+    .about-img .img-label{position:absolute;bottom:0;left:0;right:0;
+        background:linear-gradient(transparent,rgba(0,0,0,.55));
+        color:#fff;padding:24px 22px 18px;font-size:.88rem;font-weight:700;}
+    .about-right{background:#fafafa;padding:40px 36px;display:flex;flex-direction:column;justify-content:center;}
+    .about-right h2{font-size:1.3rem;font-weight:900;color:#E61E2B;margin-bottom:20px;}
+    .about-items{display:flex;flex-direction:column;gap:18px;}
+    .aitem{display:flex;gap:14px;align-items:flex-start;}
+    .aitem .ic{font-size:1.7rem;flex-shrink:0;}
+    .aitem h3{font-size:.95rem;font-weight:800;color:#111;margin-bottom:5px;}
+    .aitem p{font-size:.87rem;color:#555;line-height:1.62;}
+    #profile{background:#fafafa;}
+    .profile-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+    .pc{background:#fff;border-radius:14px;padding:32px;box-shadow:0 4px 20px rgba(0,0,0,.07);}
+    .pc h3{font-size:.82rem;font-weight:800;color:#E61E2B;letter-spacing:.07em;margin-bottom:18px;}
+    .pc ul{list-style:none;}
+    .pc ul li{padding:10px 0;border-bottom:1px solid #f2f2f2;font-size:.92rem;color:#333;
+        display:flex;gap:10px;align-items:flex-start;}
+    .pc ul li:last-child{border-bottom:none;}
+    .pc ul li::before{content:"▪";color:#E61E2B;flex-shrink:0;margin-top:2px;}
+    #promises{background:#fff;}
+    .promise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+    .pcard{background:#fff;border-radius:14px;overflow:hidden;
+        box-shadow:0 4px 18px rgba(0,0,0,.08);transition:transform .2s;}
+    .pcard:hover{transform:translateY(-5px);}
+    .pcard .pimg{height:160px;overflow:hidden;position:relative;}
+    .pcard .pimg img{width:100%;height:100%;object-fit:cover;transition:transform .3s;}
+    .pcard:hover .pimg img{transform:scale(1.05);}
+    .pcard .pimg .pno-img{width:100%;height:100%;background:#fde8ea;
+        display:flex;align-items:center;justify-content:center;font-size:3rem;}
+    .pcard .pbody{padding:22px 18px;border-top:3px solid #E61E2B;}
+    .pcard .pbody h3{font-size:.9rem;font-weight:800;color:#E61E2B;margin-bottom:8px;}
+    .pcard .pbody p{font-size:.85rem;color:#444;line-height:1.62;}
+    #contact{background:#E61E2B;}
+    #contact .sec-t{color:#fff;}
+    #contact .sec-t em{color:rgba(255,255,255,.7);}
+    #contact .bar{background:#fff;}
+    #contact .sec-s{color:rgba(255,255,255,.8);}
+    .cgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+    .citem{background:rgba(255,255,255,.13);border-radius:12px;padding:22px;
+        display:flex;gap:14px;align-items:flex-start;}
+    .citem .ci{font-size:1.5rem;flex-shrink:0;}
+    .citem h4{font-size:.76rem;color:rgba(255,255,255,.7);margin-bottom:4px;}
+    .citem p{font-size:.92rem;color:#fff;font-weight:600;}
+    footer{background:#111;color:rgba(255,255,255,.5);text-align:center;
+        padding:26px 20px;font-size:.8rem;line-height:1.9;}
+    footer strong{color:#E61E2B;}
+    @media(max-width:900px){
+      nav{padding:0 16px;}
+      .nav-links{gap:12px;}
+      .nav-links a{font-size:.78rem;}
+      #hero{min-height:auto;padding-top:62px;}
+      .hero-inner{flex-direction:column;}
+      .h-photo{flex:none;width:100%;height:90vw;min-height:300px;max-height:500px;}
+      .h-photo .cand-img{object-fit:contain;object-position:center;}
+      .h-photo::after{display:none;}
+      .h-text{padding:28px 22px 36px;}
+      .lucky-main{font-size:3rem;}
+      .lucky-trophy{font-size:2.4rem;}
+      .lucky-num,.lucky-name-block{font-size:2rem;}
+      .about-wrap,.profile-grid,.promise-grid,.cgrid{grid-template-columns:1fr;}
+    }
+    @media(max-width:400px){
+      .h-photo{height:95vw;min-height:280px;}
+      .lucky-main{font-size:2.4rem;}
+      .lucky-num,.lucky-name-block{font-size:1.7rem;}
+      .nav-links{gap:8px;}
+      .nav-links a{font-size:.72rem;}
+    }
+    .lucky-eyebrow{font-size:1.05rem;font-weight:800;color:#E61E2B;
+      letter-spacing:.18em;text-transform:uppercase;margin-bottom:4px;}
+    .lucky-main{font-size:5.2rem;font-weight:900;color:#E61E2B;
+      line-height:1;letter-spacing:-.03em;margin-bottom:6px;
+      text-shadow:2px 2px 0 rgba(230,30,43,.15);
+      display:flex;align-items:center;gap:10px;}
+    .lucky-trophy{font-size:3.8rem;line-height:1;}
+    .lucky-sub-row{display:flex;align-items:baseline;gap:14px;margin-bottom:6px;}
+    .lucky-num{font-size:3.2rem;font-weight:900;color:#111;
+      line-height:1;letter-spacing:-.02em;
+      border-right:3px solid #E61E2B;padding-right:14px;}
+    .lucky-name-block{font-size:3.2rem;font-weight:900;color:#111;
+      line-height:1;letter-spacing:-.02em;}
+    .lucky-tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 16px;}
+    .lt-red{background:#E61E2B;color:#fff;font-size:.82rem;font-weight:800;
+      padding:5px 16px;border-radius:20px;letter-spacing:.04em;}
+    .lucky-desc{font-size:.93rem;color:#444;line-height:1.8;
+      border-left:3px solid #E61E2B;padding-left:14px;}
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">🔶 국민의힘 | 기호 2-나번 이정훈</div>
+  <div class="nav-links">
+    <a href="#hero">홈</a>
+    <a href="#about">후보소개</a>
+    <a href="#profile">경력</a>
+    <a href="#promises">공약</a>
+    <a href="#contact">연락처</a>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hero-inner">
+    <div class="h-photo">
+      <img class="cand-img" src="candidate.jpg" alt="이정훈 후보"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="no-img" style="display:none"><span>👤</span><small>candidate.jpg</small></div>
+    </div>
+    <div class="h-text">
+      <div class="h-badge">🔶 국민의힘 &nbsp;|&nbsp; 동래구의원선거 온천2·3동</div>
+      <div class="lucky-eyebrow">럭키가 키운</div>
+      <div class="lucky-main">럭키맨<span class="lucky-trophy">🍀</span></div>
+      <div class="lucky-sub-row">
+        <span class="lucky-num">2-나</span>
+        <span class="lucky-name-block">이정훈</span>
+      </div>
+      <div class="h-pos">동래구의원 후보 (온천2·3동)</div>
+      <div class="lucky-tags">
+        <span class="lt-red">정직하게!</span>
+        <span class="lt-red">유능하게!</span>
+        <span class="lt-red">럭키맨!</span>
+      </div>
+      <div class="lucky-desc">
+        럭키아파트에서 20년을 살아온 진짜 청년,<br/>
+        <strong>든든한 동래사람</strong>이 되겠습니다.<br/>
+        국회에서 다져온 실무 경험과 조경 전문성으로<br/>
+        온천2·3동의 가치를 <strong>2배</strong>로 높이겠습니다.
+      </div>
+      <div class="h-btns" style="margin-top:28px;">
+        <a href="#promises" class="btn-r">📋 공약 보기</a>
+        <a href="#contact" class="btn-o">📞 연락하기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mqw">
+  <div class="mqi">
+    <span>정직하게!</span><span>유능하게!</span><span>럭키맨!</span>
+    <span>든든한 동래사람</span><span>온천2·3동의 가치를 2배로!</span>
+    <span>국회의 경험, 동래로!</span><span>기호 2-나번 이정훈</span>
+    <span>정직하게!</span><span>유능하게!</span><span>럭키맨!</span>
+    <span>든든한 동래사람</span><span>온천2·3동의 가치를 2배로!</span>
+    <span>국회의 경험, 동래로!</span><span>기호 2-나번 이정훈</span>
+  </div>
+</div>
+
+<section id="about">
+  <div class="container">
+    <div class="sec-t">럭키가 키운 <em>진짜 청년</em></div>
+    <div class="bar"></div>
+    <p class="sec-s">럭키아파트에서 나고 자라며 주민들의 불편함을 누구보다 잘 아는 이정훈 후보</p>
+    <div class="about-wrap">
+      <div class="about-img">
+        <img src="lucky_apt.jpg" alt="럭키아파트"
+             onerror="this.style.display='none';this.parentElement.style.background='#fde8ea'"/>
+        <div class="img-label">🏘️ 럭키아파트 — 20년을 함께한 우리 동네</div>
+      </div>
+      <div class="about-right">
+        <h2>🍀 럭키맨 이정훈</h2>
+        <div class="about-items">
+          <div class="aitem">
+            <div class="ic">🏘️</div>
+            <div>
+              <h3>럭키아파트 20년 거주</h3>
+              <p>주민들의 불편함을 몸소 경험한 진정한 이웃. 20년 이웃의 진심으로 동네를 돌보겠습니다.</p>
+            </div>
+          </div>
+          <div class="aitem">
+            <div class="ic">🏫</div>
+            <div>
+              <h3>내산초등학교 졸업 (20회)</h3>
+              <p>우리 아이들이 다니는 학교의 졸업생으로서, 선배의 마음으로 아이들의 안전을 챙기겠습니다.</p>
+            </div>
+          </div>
+          <div class="aitem">
+            <div class="ic">🏛️</div>
+            <div>
+              <h3>국회의 경험, 온천2·3동으로</h3>
+              <p>서지영 국회의원 비서관 경험을 토대로 업무의 흐름을 꿰뚫는 실무형 의원이 되겠습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="profile">
+  <div class="container">
+    <div class="sec-t">주요 <em>경력</em></div>
+    <div class="bar"></div>
+    <p class="sec-s">동래에서 나고 자라며 쌓아온 경험과 국회에서 연마한 실무 역량</p>
+    <div class="profile-grid">
+      <div class="pc">
+        <h3>📚 학력</h3>
+        <ul>
+          <li>내산초등학교 졸업 (20회)</li>
+          <li>동래중학교 졸업 (56회)</li>
+          <li>사직고등학교 졸업 (24회)</li>
+          <li>동아대학교 조경학과 졸업</li>
+        </ul>
+      </div>
+      <div class="pc">
+        <h3>💼 경력</h3>
+        <ul>
+          <li>전) 서지영 국회의원 비서관 (7급 상당)</li>
+          <li>현) 국민의힘 동래구 당원협의회 청년위원</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="promises">
+  <div class="container">
+    <div class="sec-t">내일을 그리는 <em>공약</em></div>
+    <div class="bar"></div>
+    <p class="sec-s">말로만 하는 정치가 아니라, 현장을 알고 정확한 시각으로 동래구의 발전을 책임지겠습니다.</p>
+    <div class="promise-grid">
+
+      <div class="pcard">
+        <div class="pimg">
+          <img src="house.png" alt="재개발"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="pno-img" style="display:none">🏗️</div>
+        </div>
+        <div class="pbody">
+          <h3>🏗️ 재개발 — 명품 주거단지 조성</h3>
+          <p>주민들의 오랜 염원인 재개발! 정확하고 유능한 시각으로 명품 주거 단지를 위한 밑그림을 확실하게 지원하겠습니다.</p>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pimg">
+          <img src="oncheon_river.png" alt="쾌적한 공간"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="pno-img" style="display:none">🌳</div>
+        </div>
+        <div class="pbody">
+          <h3>🌳 공간기획 — 쾌적한 명품 공간 동래</h3>
+          <p>조경학 전공의 전문성으로 동래를 쾌적한 명품 공간으로 만드는 데 기여하겠습니다.</p>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pimg">
+          <img src="school.jpg" alt="아동안전"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="pno-img" style="display:none">🧒</div>
+        </div>
+        <div class="pbody">
+          <h3>🧒 아동안전 — 우리 아이들 안전 지키기</h3>
+          <p>내산초등학교 졸업생으로서, 선배의 마음으로 아이들이 안전하게 다닐 수 있는 환경을 만들겠습니다.</p>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pimg">
+          <img src="comm.jpg" alt="소통"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="pno-img" style="display:none">📢</div>
+        </div>
+        <div class="pbody">
+          <h3>📢 소통 — 주민 소통 창구 든든한 대변인</h3>
+          <p>복잡한 민원을 소통하며, 주민들의 생생한 목소리를 정책에 반영하는 든든한 소통 창구 역할을 수행하겠습니다.</p>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pimg">
+          <img src="market.jpg" alt="국회연계"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="pno-img" style="display:none">🏛️</div>
+        </div>
+        <div class="pbody">
+          <h3>🏛️ 국회연계 — 서지영 의원과 원팀 협력</h3>
+          <p>서지영 국회의원과 원팀으로 호흡을 맞추며 동래구에 필요한 정책을 국회 차원에서 적극 뒷받침하겠습니다.</p>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pimg">
+          <img src="youth.jpg" alt="청년"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="pno-img" style="display:none">💪</div>
+        </div>
+        <div class="pbody">
+          <h3>💪 청년 — 청년이 살고 싶은 동래 만들기</h3>
+          <p>동래에서 나고 자란 청년으로서, 청년들이 정착하고 싶은 활력 있는 동래구를 만들겠습니다.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="sec-t">이정훈 후보 <em>연락처</em></div>
+    <div class="bar"></div>
+    <p class="sec-s">주민 여러분의 목소리를 언제든지 들을 준비가 되어 있습니다.</p>
+    <div class="cgrid">
+      <div class="citem"><div class="ci">📍</div><div><h4>선거사무실 주소</h4><p>부산시 동래구 충렬대로 129-1, 2층 202호</p></div></div>
+      <div class="citem"><div class="ci">📞</div><div><h4>전화번호</h4><p>010-8675-7876</p></div></div>
+      <div class="citem"><div class="ci">✉️</div><div><h4>이메일</h4><p>dongnae_jung@naver.com</p></div></div>
+      <div class="citem"><div class="ci">🗳️</div><div><h4>선거구</h4><p>동래구의원선거 (온천2·3동) 기호 2-나번</p></div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><strong>기호 2-나번 이정훈</strong> | 동래구의원선거 (온천2·3동)</p>
+  <p>🗳️ 2026년 6월 3일 (수), 제9회 전국동시지방선거</p>
+  <p>선거사무실: 부산시 동래구 충렬대로 129-1, 2층 202호 &nbsp;|&nbsp; 📞 010-8675-7876</p>
+</footer>
+
+</body>
+</html>
